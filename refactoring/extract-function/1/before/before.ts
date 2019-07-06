@@ -1,16 +1,10 @@
-interface Product {
-  productCode: string;
-  coreItemCode: string;
-}
+import {
+  Product,
+  PopulateEntry,
+  ShopifyEntry,
+} from "./types";
 
-interface ShopifyEntry {
-  productCodes: string[];
-  title: string;
-  publicUrl: string;
-  description: string;
-}
-
-function getProductEntries() {
+function getProductEntries(): PopulateEntry[] {
   const coreItemProducts: Product[] = [];
   const shopifyEntries: ShopifyEntry[] = [];
   const products: Product[] = [];
@@ -34,8 +28,10 @@ function getProductEntries() {
 
     return {
       title: entry.title,
-      publicUrl: entry.publicUrl,
-      description: entry.description,
+      publicUrl: entry.publicUrl || null,
+      description: entry.description || null,
+      images: entry.images.length ? entry.images : null,
+      coreItemCode: coreProduct.coreItemCode,
     }
   }).filter((el): el is Exclude<typeof el, undefined> => !!el);
 }
