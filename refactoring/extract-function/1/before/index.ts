@@ -4,11 +4,11 @@ import {
   ShopifyEntry,
 } from "./types";
 
-function getProductEntries(): PopulateEntry[] {
-  const coreItemProducts: Product[] = [];
-  const shopifyEntries: ShopifyEntry[] = [];
-  const products: Product[] = [];
-
+export function getProductEntries(
+  coreItemProducts: Product[],
+  products: Product[],
+  shopifyEntries: ShopifyEntry[],
+): PopulateEntry[] {
   return coreItemProducts.map((coreProduct) => {
     const productCodes = products
       .filter(product => coreProduct.coreItemCode === product.coreItemCode)

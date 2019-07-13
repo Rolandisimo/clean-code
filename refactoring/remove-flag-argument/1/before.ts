@@ -1,6 +1,6 @@
 import { Order, anOrder } from "./utils";
 
-function deliveryDate(anOrder: Order, isRush: boolean) {
+export function deliveryDate(anOrder: Order, isRush: boolean) {
   if (isRush) {
     let deliveryTime;
 

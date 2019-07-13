@@ -11,11 +11,11 @@ import {
   removeNonEntries,
 } from "./utils";
 
-function getProductEntries(): PopulateEntry[] {
-  const coreItemProducts: Product[] = [];
-  const products: Product[] = [];
-  const shopifyEntries: ShopifyEntry[] = [];
-
+export function getProductEntries(
+  coreItemProducts: Product[],
+  products: Product[],
+  shopifyEntries: ShopifyEntry[],
+): PopulateEntry[] {
   const entries = coreItemProducts.map((coreProduct) => {
     return formatProductEntry(
       getEntry(shopifyEntries, getMatchingProductCodes(products, coreProduct)),

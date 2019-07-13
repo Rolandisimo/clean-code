@@ -12,11 +12,11 @@ export function getMatchingProductCodes(products: Product[], coreProduct: Produc
 }
 
 export function getEntry(shopifyEntries: ShopifyEntry[], productCodes: string[]) {
-  return shopifyEntries.find((shopifyEntry) => {
+  return shopifyEntries.find((shopifyEntry) =>
     shopifyEntry.productCodes.some(shopifyCode =>
       productCodes.some(productCode => doStringsMatch(shopifyCode, productCode))
     )
-  });
+  );
 }
 
 export function doStringsMatch(first: string, second: string, caseSensitive = false) {
