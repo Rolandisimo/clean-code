@@ -1,3 +1,5 @@
+# Replace Loop with Pipeline
+
 Code example for "before" taken from https://github.com/TypeStrong/ts-node/blob/master/src/bin.ts#L344
 
 The "after" example improved several things:
