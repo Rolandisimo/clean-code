@@ -1,8 +1,10 @@
 # Long function
 
-This should be pretty self-explanatory. If you catch yourself scrolling up and down, up and down ad infinitum just to understand what is happening in a function there's a good chance it could and should be split into smaller parts. Some refactoring techniques to use here are [Extract function](https://github.com/Rolandisimo/refactoring_examples/tree/master/refactoring/extract-function).
+This should be pretty self-explanatory. If you catch yourself scrolling up and down, up and down ad infinitum just to understand what is happening in a function there's a good chance it could and should be split into smaller parts. Some refactoring techniques to use here are [Extract function](https://github.com/Rolandisimo/refactoring_examples/tree/master/refactoring/extract-function), Slide Statements, Replace Conditional with Polymorphism, Replace Temp with Query and others.
 
-Excerpt from `https://github.com/TypeStrong/ts-node/blob/master/src/index.ts`
+Code below is an example of a public codebase having this code smell present. You don't have to read it, just to see how uncomfortable it is to look at it.
+<br/></br>Excerpt from https://github.com/TypeStrong/ts-node/blob/master/src/index.ts
+
 ```typescript
 export function register (opts: Options = {}): Register {
   const options = Object.assign({}, DEFAULTS, opts)

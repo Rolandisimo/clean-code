@@ -13,7 +13,7 @@ export function snoc<A>(init: Array<A>, end: A): NonEmptyArray<A> {
 }
 ```
 
-Exactly. No Idea.
+Exactly. No Idea. Unless you spend your time reading it.
 That's why originally this excerpt had a comment above it saying
 ```typescript
 /**
@@ -28,5 +28,5 @@ That's why originally this excerpt had a comment above it saying
  */
 ```
 
-An example taken from `https://github.com/gcanti/fp-ts`. I want to note that if you write a service that will rarely be altered or read, then this format is totally fine. <br /><br />
-However, if you catch the `functional programming disease` and obfuscate everything while your colleagues _(or even you)_ read the above code over and over again, then please resort to human readable, self-explanatory names. You're not paid for short variable names.
+An example taken from https://github.com/gcanti/fp-ts. I want to note that if you write a service that will rarely be altered or read, then this format is totally fine. <br /><br />
+However, if you catch the _functional programming disease_ and obfuscate everything while your colleagues _(or even you)_ read the above code over and over again, then please resort to human readable, self-explanatory names.
