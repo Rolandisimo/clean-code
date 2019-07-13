@@ -14,7 +14,7 @@ code-smells | Contains .md files containing the description of the smell, bad an
 refactoring | Folders named after refactoring techniques with before, after examples and tests
 
 # Content
-Here you should be able to find most code smells covered, most refactoring techniques and clean code principles aplied in action.
+Here you should be able to find most code smells covered, most refactoring techniques and clean code principles applied in action.
 
 The refactoring techniques will have before and after files and test files written in Typescript.
 

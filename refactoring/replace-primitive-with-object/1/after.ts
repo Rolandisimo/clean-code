@@ -21,7 +21,7 @@ export class Priority {
     if (Priority.legalValues().includes(value)) {
       this.value = value;
     } else {
-      throw new Error(`${value} is invalid for Priorty`);
+      throw new Error(`${value} is invalid for Priority`);
     }
   }
   public toString() { return this.value };
@@ -35,13 +35,8 @@ export class Priority {
 
 
 
-/**
- * USAGE
- *
- * ```typescript
- * const highPriorityCount = orders.filter((order) => {
- *   return order.priority.higherThan(new Priority("normal"));
- * }).length;
- * ```
- */
+const orders: Order[] = [];
+const highPriorityCount = orders.filter((order) => {
+  return order.priority.higherThan(new Priority("medium"));
+}).length;
 
