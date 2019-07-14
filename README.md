@@ -11,12 +11,12 @@ This repo is inspired from the books ["Refactoring"](https://www.amazon.fr/Refac
 **Folder** | **Content**
 :---: | :---:
 code-smells | Contains .md files containing the description of the smell, bad and good examples, reasons for change, etc
-refactoring | Folders named after refactoring techniques containing numbered example folders with before, after examples and tests
+refactoring | Folders named after refactoring techniques containing numbered example folders with before, after examples and tests. Usage examples of a particular block of code can be best seen in the test files.
 
 # Content
 Here you should be able to find most code smells covered, most refactoring techniques and clean code principles applied in action.
 
-The refactoring techniques will have before and after files and test files written in Typescript.
+The refactoring techniques have example folders in no particular order. In them you'll have before, after and test files written in Typescript.
 
 Part of the examples are from the books mentioned above while the other part comes from real life code examples.
 
