@@ -7,20 +7,24 @@ This repo is inspired from the books ["Refactoring"](https://www.amazon.fr/Refac
 
 ## This is a WIP repo 🦐
 
-# Structure
+# Structure 🤔
 **Folder** | **Content**
 :---: | :---:
 code-smells | Contains .md files containing the description of the smell, bad and good examples, reasons for change, etc
 refactoring | Folders named after refactoring techniques containing numbered example folders with before, after examples and tests. Usage examples of a particular block of code can be best seen in the test files.
 
-# Content
+# Content 🎉
 Here you should be able to find most code smells covered, most refactoring techniques and clean code principles applied in action.
 
 The refactoring techniques have example folders in no particular order. In them you'll have before, after and test files written in Typescript.
 
 Part of the examples are from the books mentioned above while the other part comes from real life code examples.
 
-# Disclaimer
-This is not a definitive guide. Refactoring is always about compromising. Whether you agree with an approach or not depends on a multitude of factors - teams styleguide, how often a particular piece of code is changed, team sizes, roadmaps, etc.
+# Disclaimer 🙉
+🕺This is not a definitive guide. Refactoring is always about compromising. Whether you agree with an approach or not depends on a multitude of factors - teams styleguide, how often a particular piece of code is changed, team sizes, roadmaps, etc.
 
-With this said, this repo is meant to be as a guide and not a judge.
+👉Some of the refactoring techniques and examples can be considered as intermediate steps in a bigger refactoring process.
+
+🙌 With this said, this repo is meant to be as a guide and not a judge.
+
+📚For more information on these topics please read the fantastic books mentioned above.
