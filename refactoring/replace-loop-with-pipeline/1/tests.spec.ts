@@ -1,4 +1,4 @@
-import { lineCount } from "./before";
+import { lineCount } from "./after";
 
 describe("replace-loop-with-pipeline", () => {
   describe("1", () => {

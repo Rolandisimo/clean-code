@@ -15,16 +15,11 @@ export class Order {
 
 
 
-/**
- * USAGE
- *
- * ```typescript
- * const highPriorityCount = orders.filter((order) => {
- *   return (
- *     "high" === order.priority
- *     || "rush" === order.priority
- *   );
- * }).length;
- * ```
- */
-
+// Usage example
+const orders: Order[] = [];
+const highPriorityCount = orders.filter((order) => {
+  return (
+    "high" === order.priority
+    || "rush" === order.priority
+  );
+}).length;

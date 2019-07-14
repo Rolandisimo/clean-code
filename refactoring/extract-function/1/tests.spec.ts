@@ -1,4 +1,4 @@
-import { getProductEntries } from "./before";
+import { getProductEntries } from "./after";
 
 describe("extract-function", () => {
   describe("1", () => {
