@@ -20,6 +20,19 @@ The refactoring techniques have example folders in no particular order. In them 
 
 Part of the examples are from the books mentioned above while the other part comes from real life code examples.
 
+# Contributions ❤️
+If you have an example code that you refactored, feel free to contribute to the appropriate refactoring technique used.
+
+Most often there will be more than 1 technique used at the same time, but you need to distinguish the main one and mention others as bonus refactorings. You can also split the refactored code into even smaller parts and contribute to several refactoring techniques at once.
+
+Contribution should follow the same guideline as other examples:
+- Name the folder as the next example number e.g. `2`
+- Add `before.ts` and `after.ts` files
+  - OPTIONAL: Add any additional files you need for the example e.g. `types.ts, utils.ts, etc`
+- Add a test file with the after example used. _This will serve as a usage example and to prove that the refactoring code is functioning as intended_
+- Add an entry to the approprate readme e.g. `extract-class/readme.md`
+- Describe the source of the before and after code, add concrete benefits of this particular code refactoring
+
 # Disclaimer 🙉
 🕺This is not a definitive guide. Refactoring is always about compromising. Whether you agree with an approach or not depends on a multitude of factors - teams styleguide, how often a particular piece of code is changed, team sizes, roadmaps, etc.
 
