@@ -1,4 +1,4 @@
-import { Person } from "./after";
+import { Person } from "./before";
 
 describe("extract-class", () => {
   describe("1", () => {
