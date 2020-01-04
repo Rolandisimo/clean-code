@@ -1,0 +1,5 @@
+"This is how architectures become rigid. Too many modules know too much about the architecture"
+- Robert C. Martin, author of "Clean Code. A Handbook of Agile Software Craftsmanship"
+
+"You know you are working on clean code when each routine you read turns out to be pretty much what you expected"
+- Ward Cunningham, inventor of Wiki
