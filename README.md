@@ -13,6 +13,7 @@ This repo is inspired from the books ["Refactoring"](https://www.amazon.fr/Refac
 code-smells | Contains .md files containing the description of the smell, bad and good examples, reasons for change, etc
 refactoring | Folders named after refactoring techniques containing numbered example folders with before, after examples and tests. Usage examples of a particular block of code can be best seen in the test files.
 clean-code | Contains .md files with examples of applying clean code principles on comments, functions, etc
+quotes.txt | Contains quotes on programming gathered from different resources
 
 # Content 🎉
 Here you should be able to find most code smells covered, most refactoring techniques and clean code principles applied in action.
