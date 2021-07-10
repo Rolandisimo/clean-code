@@ -21,13 +21,13 @@ class Phone {
       this.unformattedNumber = unformattedNumber;
    }
    public getAreaCode() {
-      return unformattedNumber.substring(0,3);
+      return this.unformattedNumber.substring(0,3);
    }
    public getPrefix() {
-      return unformattedNumber.substring(3,6);
+      return this.unformattedNumber.substring(3,6);
    }
    public getNumber() {
-      return unformattedNumber.substring(6,10);
+      return this.unformattedNumber.substring(6,10);
    }
 }
 
@@ -50,23 +50,23 @@ class Phone {
       this.unformattedNumber = unformattedNumber;
    }
    private getAreaCode() {
-      return unformattedNumber.substring(0,3);
+      return this.unformattedNumber.substring(0,3);
    }
    private getPrefix() {
-      return unformattedNumber.substring(3,6);
+      return this.unformattedNumber.substring(3,6);
    }
    private getNumber() {
-      return unformattedNumber.substring(6,10);
+      return this.unformattedNumber.substring(6,10);
    }
-   public toFormattedString() { // <-- 1 public function that knows its parents interface
+   public toString() { // <-- 1 public function that knows its parents interface
      return "(" + this.getAreaCode() + ") " + this.getPrefix() + "-" + this.getNumber();
    }
 }
 
 class Customer {
-   private mobilePhone: Phone = new Phone(/* some number */);
+   private mobilePhone: Phone = new Phone("22365412");
    public getMobilePhoneNumber() {
-      return this.mobilePhone.toFormattedString(); // <-- 1 public function without exposing inner API of Phone
+      return `${this.mobilePhone}`; // <-- 1 public function without exposing inner API of Phone
    }
 }
 ```
