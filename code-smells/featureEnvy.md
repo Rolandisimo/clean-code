@@ -64,7 +64,7 @@ class Phone {
 }
 
 class Customer {
-   private mobilePhone: Phone = new Phone("22365412");
+   private mobilePhone: Phone = new Phone("1234567890");
    public getMobilePhoneNumber() {
       return `${this.mobilePhone}`; // <-- 1 public function without exposing inner API of Phone
    }
